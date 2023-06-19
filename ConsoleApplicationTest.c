@@ -13,11 +13,17 @@ struct Alumno
 int main() {
 
 	int nAlumnos;
-	char buffer[20];
+	char buffer[20], cualquiercosa[20];
 
 	struct Alumno* alumnos;
 
-	printf("Ingrese el numero de alumnos que desea ingresar: ");
+	puts("Programa de structs ingrese su nombre: ");
+	gets(cualquiercosa);
+	fflush(stdout);
+	puts("Hola");
+	puts(&cualquiercosa);
+
+	printf("\nIngrese el numero de alumnos que desea ingresar: ");
 	fgets(buffer, sizeof(buffer), stdin);
 	nAlumnos = atoi(buffer);
 
